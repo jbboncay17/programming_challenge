@@ -1,10 +1,16 @@
-firstnumber=int(input("Enter the first number: "))
-secondnumber=int(input("Enter the second number: "))
+bold="\033[1m"
+red="\033[31m"
+green="\033[32m"
+end="\033[0m"
+
+firstnumber=int(input(bold+"Enter the first number: "+end))
+secondnumber=int(input(bold+"Enter the second number: "+end))
 
 if secondnumber !=0:
     remainder=firstnumber%secondnumber
     print("")
-    print("The remainder is:", remainder)
+    print(bold+green+"The remainder is:"+end, remainder)
 
 else:
-    print("Syntax Error")
+    print("")
+    print(bold+red+"Syntax Error"+end)
